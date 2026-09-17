@@ -68,3 +68,8 @@ You can use Git on your laptop for as long as you want without using GitHub. BUT
 * After you commit, save, knit, press Push 
 * Now it is saved in your GitHub 
 * any additional changes you make/commit aren't on GitHub until you Push again 
+
+* Don't need to commit as often as you save. Commit every time you're "crossing off a checklist in your mind"
+* when you finish a task, etc, you can commit and push. Save way more often (constantly)
+
+* For rmd: save, knit all the time. commit, push every so often 
