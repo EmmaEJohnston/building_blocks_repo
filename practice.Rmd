@@ -50,5 +50,6 @@ I can write superscripts^2^ or subscripts~2~
 * I really do 
   * I wish 
   * I could write a haiku 
-
-
+```{r}
+ggplot(new_df, aes(x = x)) + geom_histogram()
+```

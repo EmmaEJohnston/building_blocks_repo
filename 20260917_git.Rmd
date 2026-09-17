@@ -45,3 +45,17 @@ Cons
 * everyone on a project is required to stick with same development pipeline 
 
 Reminder: you can't put confidential data on GitHub - it is public!!! 
+
+* Make new repo on GitHub 
+* Press green button - copy URL 
+* go to R studio --> file --> new project --> bottom thing --> git --> paste URL 
+* can copy files into repo 
+* first, check both stuff in Git and press commit, write what you did. do this periodically 
+
+
+```{r}
+library(tidyverse)
+```
+
+okay I made a histogram on other rmd. Every time you make a change and save, changes will show up in Git tab. Check them and re-commit. 
+* once you commit, read stuff is stuff you removed, green is stuff you added 
