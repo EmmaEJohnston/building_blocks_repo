@@ -59,3 +59,8 @@ library(tidyverse)
 
 okay I made a histogram on other rmd. Every time you make a change and save, changes will show up in Git tab. Check them and re-commit. 
 * once you commit, read stuff is stuff you removed, green is stuff you added 
+
+You can use Git on your laptop for as long as you want without using GitHub. BUT when you are putitng stuff on Git Hub you have ot be explicit. Use code on website, paste into console.
+* this will bring you to GitHub, make a new token, set expiration to never for this one (so you don't worry about it)
+
+* go back to website, copy gitcreds code and paste into console 
