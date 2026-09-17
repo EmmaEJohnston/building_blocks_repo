@@ -1,0 +1,54 @@
+---
+title: "practice"
+author: "Emma"
+date: "2026-09-15"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Section 0: library 
+Command, option, I to make new code chunk 
+```{r message=FALSE,echo=FALSE}
+library(tidyverse)
+```
+
+# Section 1: generating a sample, running a mean 
+```{r}
+sample = rnorm(600)
+```
+I just made a sample, and the mean is `r mean(sample)` 
+
+# Section 2: making a new data frame 
+
+```{r}
+new_df=
+  tibble(
+    x = rnorm(600, sd = 0.5),
+    y = 1 + 2 * x + rnorm(600)
+  )
+
+tail(new_df)
+```
+# Section 3: I'm gonna make a plot! 
+
+```{r}
+ggplot(new_df, aes(x = x)) + geom_histogram()
+```
+
+The mean of this new histogram is `r round(mean(pull(new_df, x)), 2)`
+
+# Section 4: Writing Fun 
+## It is kind of fun 
+### Actually 
+*Now I'm just going to write a bit* **And this part is gonna be in bold** Or will it be `code`. 
+I can write superscripts^2^ or subscripts~2~
+
+* I like lists 
+* I really do 
+  * I wish 
+  * I could write a haiku 
+
+
