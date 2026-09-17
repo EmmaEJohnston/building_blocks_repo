@@ -64,3 +64,6 @@ You can use Git on your laptop for as long as you want without using GitHub. BUT
 * this will bring you to GitHub, make a new token, set expiration to never for this one (so you don't worry about it)
 
 * go back to website, copy gitcreds code and paste into console 
+* this token works for your computer forever - don't need to do for every project 
+* After you commit, save, knit, press Push 
+* Now it is saved in your GitHub 
