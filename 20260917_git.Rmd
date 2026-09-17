@@ -5,6 +5,7 @@ date: "2026-09-17"
 output: html_document
 ---
 
+## Git
 Git is like google docs/drop box/track changes 
 * Git watches repositories - folders/directories - for changes 
 * asks that you describe changes when they're made 
@@ -12,16 +13,16 @@ Git is like google docs/drop box/track changes
 * looks for conflicts, forces you to resolve them 
 * allows multiple people to contribute to the same repository, and does all of the above for everyone at once 
 
-GitHub 
+## GitHub 
 * Git lives on your computer; GitHub is a web-based platform for storing repositories (eg. DropBox but with Git in your folders) 
 * GitHub is a great platform for disseminating work. You can easily create and host reports, websites, R packages 
 * R projects can initialize Git with a mouse click 
 
-Git client 
+## Git client 
 * Git is a command-line tool 
 * Git clients let you do most Git-related stuff in a GUI - Git client is to Git as R Studio is to R 
 
-Workflow 
+## Workflow 
 * When starting new project: 
   * Create GH repo 
   * created linked R project using repo URL 
@@ -33,20 +34,20 @@ Workflow
   * Branch/merge repos 
   * cloning/forking repos 
   
-Pros 
+## Pros 
 * revert to earlier commits if you mess something up 
 * can reveiew development process 
 * see what collaborators are doing and why 
 * you're forced to resovle conflicts 
 
-Cons 
+## Cons 
 * lot of overhead 
 * resolving conflicts sucks 
 * everyone on a project is required to stick with same development pipeline 
 
-Reminder: you can't put confidential data on GitHub - it is public!!! 
+# Reminder: you can't put confidential data on GitHub - it is public!!! 
 
-* Make new repo on GitHub 
+## Make new repo on GitHub 
 * Press green button - copy URL 
 * go to R studio --> file --> new project --> bottom thing --> git --> paste URL 
 * can copy files into repo 
@@ -60,16 +61,26 @@ library(tidyverse)
 okay I made a histogram on other rmd. Every time you make a change and save, changes will show up in Git tab. Check them and re-commit. 
 * once you commit, read stuff is stuff you removed, green is stuff you added 
 
-You can use Git on your laptop for as long as you want without using GitHub. BUT when you are putitng stuff on Git Hub you have ot be explicit. Use code on website, paste into console.
+## First Git Hub push - make a token etc 
+You can use Git on your laptop for as long as you want without using GitHub. BUT when you are putting stuff on Git Hub you have to be explicit. Use code on website, paste into console.
 * this will bring you to GitHub, make a new token, set expiration to never for this one (so you don't worry about it)
-
 * go back to website, copy gitcreds code and paste into console 
 * this token works for your computer forever - don't need to do for every project 
-* After you commit, save, knit, press Push 
+
+## commit, save, knit, press Push 
 * Now it is saved in your GitHub 
 * any additional changes you make/commit aren't on GitHub until you Push again 
-
 * Don't need to commit as often as you save. Commit every time you're "crossing off a checklist in your mind"
 * when you finish a task, etc, you can commit and push. Save way more often (constantly)
-
 * For rmd: save, knit all the time. commit, push every so often 
+
+## make github documents 
+as well (instead of html) so you can read it on github like rmd. just change output stuff 
+
+## Adding a collaborator 
+* on github - settings --> collaborators --> add people
+
+## Pulling data from GitHub 
+* if your collaborator makes edits to your GitHub: 
+  * which they do but copying the URL from GitHub, making a new project (just like you did)
+* you can pull their changes in the Git tab 

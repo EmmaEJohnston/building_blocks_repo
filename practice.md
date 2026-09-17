@@ -13,7 +13,7 @@ Command, option, I to make new code chunk
 sample = rnorm(600)
 ```
 
-I just made a sample, and the mean is 0.0221903
+I just made a sample, and the mean is 5.701469^{-4}
 
 # Section 2: making a new data frame
 
@@ -30,12 +30,12 @@ tail(new_df)
     ## # A tibble: 6 × 2
     ##         x       y
     ##     <dbl>   <dbl>
-    ## 1  0.799   1.98  
-    ## 2  0.569   2.63  
-    ## 3  0.660  -0.0200
-    ## 4 -0.0959  1.71  
-    ## 5  0.283   2.59  
-    ## 6 -0.408   1.18
+    ## 1 -0.534  -0.473 
+    ## 2 -0.442   0.0673
+    ## 3 -0.154   0.513 
+    ## 4 -0.0774 -0.267 
+    ## 5  0.425   0.834 
+    ## 6  0.584   2.41
 
 # Section 3: I’m gonna make a plot!
 
@@ -47,7 +47,7 @@ ggplot(new_df, aes(x = x)) + geom_histogram()
 
 ![](practice_files/figure-gfm/unnamed-chunk-4-1.png)<!-- -->
 
-The mean of this new histogram is 0.01
+The mean of this new histogram is -0.01
 
 # Section 4: Writing Fun
 

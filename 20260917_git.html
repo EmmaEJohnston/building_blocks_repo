@@ -357,35 +357,74 @@ display: none;
 </div>
 
 
+<div id="git" class="section level2">
+<h2>Git</h2>
 <p>Git is like google docs/drop box/track changes * Git watches
 repositories - folders/directories - for changes * asks that you
 describe changes when they’re made * remembers old versions when you
 need them * looks for conflicts, forces you to resolve them * allows
 multiple people to contribute to the same repository, and does all of
 the above for everyone at once</p>
-<p>GitHub * Git lives on your computer; GitHub is a web-based platform
-for storing repositories (eg. DropBox but with Git in your folders) *
-GitHub is a great platform for disseminating work. You can easily create
-and host reports, websites, R packages * R projects can initialize Git
-with a mouse click</p>
-<p>Git client * Git is a command-line tool * Git clients let you do most
-Git-related stuff in a GUI - Git client is to Git as R Studio is to
-R</p>
-<p>Workflow * When starting new project: * Create GH repo * created
-linked R project using repo URL * Do stuff * Once you do stuff, you
-commit to the changes (commit = save) * Git keeps track of changes
-between commits * Your commit messages will summarize what’s different *
-Once you do lots of stuff, you push changes to GitHub * Branch/merge
-repos * cloning/forking repos</p>
-<p>Pros * revert to earlier commits if you mess something up * can
-reveiew development process * see what collaborators are doing and why *
-you’re forced to resovle conflicts</p>
-<p>Cons * lot of overhead * resolving conflicts sucks * everyone on a
-project is required to stick with same development pipeline</p>
-<p>Reminder: you can’t put confidential data on GitHub - it is
-public!!!</p>
+</div>
+<div id="github" class="section level2">
+<h2>GitHub</h2>
 <ul>
-<li>Make new repo on GitHub</li>
+<li>Git lives on your computer; GitHub is a web-based platform for
+storing repositories (eg. DropBox but with Git in your folders)</li>
+<li>GitHub is a great platform for disseminating work. You can easily
+create and host reports, websites, R packages</li>
+<li>R projects can initialize Git with a mouse click</li>
+</ul>
+</div>
+<div id="git-client" class="section level2">
+<h2>Git client</h2>
+<ul>
+<li>Git is a command-line tool</li>
+<li>Git clients let you do most Git-related stuff in a GUI - Git client
+is to Git as R Studio is to R</li>
+</ul>
+</div>
+<div id="workflow" class="section level2">
+<h2>Workflow</h2>
+<ul>
+<li>When starting new project:
+<ul>
+<li>Create GH repo</li>
+<li>created linked R project using repo URL</li>
+<li>Do stuff</li>
+<li>Once you do stuff, you commit to the changes (commit = save)</li>
+<li>Git keeps track of changes between commits</li>
+<li>Your commit messages will summarize what’s different</li>
+<li>Once you do lots of stuff, you push changes to GitHub</li>
+<li>Branch/merge repos</li>
+<li>cloning/forking repos</li>
+</ul></li>
+</ul>
+</div>
+<div id="pros" class="section level2">
+<h2>Pros</h2>
+<ul>
+<li>revert to earlier commits if you mess something up</li>
+<li>can reveiew development process</li>
+<li>see what collaborators are doing and why</li>
+<li>you’re forced to resovle conflicts</li>
+</ul>
+</div>
+<div id="cons" class="section level2">
+<h2>Cons</h2>
+<ul>
+<li>lot of overhead</li>
+<li>resolving conflicts sucks</li>
+<li>everyone on a project is required to stick with same development
+pipeline</li>
+</ul>
+</div>
+<div id="reminder-you-cant-put-confidential-data-on-github---it-is-public" class="section level1">
+<h1>Reminder: you can’t put confidential data on GitHub - it is
+public!!!</h1>
+<div id="make-new-repo-on-github" class="section level2">
+<h2>Make new repo on GitHub</h2>
+<ul>
 <li>Press green button - copy URL</li>
 <li>go to R studio –&gt; file –&gt; new project –&gt; bottom thing –&gt;
 git –&gt; paste URL</li>
@@ -408,27 +447,53 @@ do this periodically</li>
 and save, changes will show up in Git tab. Check them and re-commit. *
 once you commit, read stuff is stuff you removed, green is stuff you
 added</p>
+</div>
+<div id="first-git-hub-push---make-a-token-etc" class="section level2">
+<h2>First Git Hub push - make a token etc</h2>
 <p>You can use Git on your laptop for as long as you want without using
-GitHub. BUT when you are putitng stuff on Git Hub you have ot be
+GitHub. BUT when you are putting stuff on Git Hub you have to be
 explicit. Use code on website, paste into console. * this will bring you
 to GitHub, make a new token, set expiration to never for this one (so
-you don’t worry about it)</p>
+you don’t worry about it) * go back to website, copy gitcreds code and
+paste into console * this token works for your computer forever - don’t
+need to do for every project</p>
+</div>
+<div id="commit-save-knit-press-push" class="section level2">
+<h2>commit, save, knit, press Push</h2>
 <ul>
-<li><p>go back to website, copy gitcreds code and paste into
-console</p></li>
-<li><p>this token works for your computer forever - don’t need to do for
-every project</p></li>
-<li><p>After you commit, save, knit, press Push</p></li>
-<li><p>Now it is saved in your GitHub</p></li>
-<li><p>any additional changes you make/commit aren’t on GitHub until you
-Push again</p></li>
-<li><p>Don’t need to commit as often as you save. Commit every time
-you’re “crossing off a checklist in your mind”</p></li>
-<li><p>when you finish a task, etc, you can commit and push. Save way
-more often (constantly)</p></li>
-<li><p>For rmd: save, knit all the time. commit, push every so
-often</p></li>
+<li>Now it is saved in your GitHub</li>
+<li>any additional changes you make/commit aren’t on GitHub until you
+Push again</li>
+<li>Don’t need to commit as often as you save. Commit every time you’re
+“crossing off a checklist in your mind”</li>
+<li>when you finish a task, etc, you can commit and push. Save way more
+often (constantly)</li>
+<li>For rmd: save, knit all the time. commit, push every so often</li>
 </ul>
+</div>
+<div id="make-github-documents" class="section level2">
+<h2>make github documents</h2>
+<p>as well (instead of html) so you can read it on github like rmd. just
+change output stuff</p>
+</div>
+<div id="adding-a-collaborator" class="section level2">
+<h2>Adding a collaborator</h2>
+<ul>
+<li>on github - settings –&gt; collaborators –&gt; add people</li>
+</ul>
+</div>
+<div id="pulling-data-from-github" class="section level2">
+<h2>Pulling data from GitHub</h2>
+<ul>
+<li>if your collaborator makes edits to your GitHub:
+<ul>
+<li>which they do but copying the URL from GitHub, making a new project
+(just like you did)</li>
+</ul></li>
+<li>you can pull their changes in the Git tab</li>
+</ul>
+</div>
+</div>
 
 
 
