@@ -1,0 +1,47 @@
+---
+title: "Git and GitHub"
+author: "Emma"
+date: "2026-09-17"
+output: html_document
+---
+
+Git is like google docs/drop box/track changes 
+* Git watches repositories - folders/directories - for changes 
+* asks that you describe changes when they're made 
+* remembers old versions when you need them 
+* looks for conflicts, forces you to resolve them 
+* allows multiple people to contribute to the same repository, and does all of the above for everyone at once 
+
+GitHub 
+* Git lives on your computer; GitHub is a web-based platform for storing repositories (eg. DropBox but with Git in your folders) 
+* GitHub is a great platform for disseminating work. You can easily create and host reports, websites, R packages 
+* R projects can initialize Git with a mouse click 
+
+Git client 
+* Git is a command-line tool 
+* Git clients let you do most Git-related stuff in a GUI - Git client is to Git as R Studio is to R 
+
+Workflow 
+* When starting new project: 
+  * Create GH repo 
+  * created linked R project using repo URL 
+  * Do stuff 
+  * Once you do stuff, you commit to the changes (commit = save)
+  * Git keeps track of changes between commits 
+  * Your commit messages will summarize what's different 
+  * Once you do lots of stuff, you push changes to GitHub 
+  * Branch/merge repos 
+  * cloning/forking repos 
+  
+Pros 
+* revert to earlier commits if you mess something up 
+* can reveiew development process 
+* see what collaborators are doing and why 
+* you're forced to resovle conflicts 
+
+Cons 
+* lot of overhead 
+* resolving conflicts sucks 
+* everyone on a project is required to stick with same development pipeline 
+
+Reminder: you can't put confidential data on GitHub - it is public!!! 
